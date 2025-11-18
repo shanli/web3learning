@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferETH",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "multiTransferToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"multiTransferToken(address,address[],uint256[])": {
+					"params": {
+						"_addresses": "The array of airdrop addresses",
+						"_amounts": "The array of amount of tokens (airdrop amount for each address)",
+						"_token": "The address of ERC20 token for transfer"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multiTransferETH(address[],uint256[])": {
+					"notice": "Transfer ETH to multiple addresses"
+				},
+				"multiTransferToken(address,address[],uint256[])": {
+					"notice": "Transfer ERC20 tokens to multiple addresses, authorization is required before use"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"103/Airdrop.sol": "airdrop"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"103/Airdrop.sol": {
+			"keccak256": "0x244dd8e8a9f5016b185125fe290cb338d3f97884a5511b8ce9d7f20d6783259e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2dae3a12d4821d1056a2644676717a55b541f1aeaf88d9320abfa6e3846c22c9",
+				"dweb:/ipfs/QmWqx1mYp1Z6as7tjGEitvYP5gU3T1kh97RoH6Uae33w1o"
+			]
+		},
+		"103/IERC20.sol": {
+			"keccak256": "0x582f9dc2662632a432c30749e0cd088fb21ba9dbfe51515a8311063fc3cb814b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df5cf7e60b2eddeea036b7a050e511f76ceb60d34d61cb5ed737bd0ba3fe15b1",
+				"dweb:/ipfs/QmagcHYubGUGky7y4gW8VG8MFpYC3QAwtKRYmxEovryU6c"
+			]
+		}
+	},
+	"version": 1
+}

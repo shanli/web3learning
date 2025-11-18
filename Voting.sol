@@ -36,10 +36,10 @@ contract Voting{
         for (uint256 i = 0; i < cands.length; i++) {
             results[i].voteCount = 0;
             cands[i].voteCount = 0;
-            return cands;
         }
+        return cands;
     }
-    function getVotes() public returns(Candidate[] memory){
+    function getVotes() public view returns(Candidate[] memory){
         Candidate[] memory allCandidates = new Candidate[](cands.length);
         for (uint256 i = 0; i < cands.length; i++) {
             allCandidates[i] = results[i];

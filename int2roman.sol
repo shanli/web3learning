@@ -26,7 +26,7 @@ contract Int2Roman{
     //     valueSymbols.push(ValueSymbols(1, "I")); 
     // }
    
-    function int2Roman(uint256 _num) public returns(string memory romanStr){
+    function int2Roman(uint256 _num) public view returns(string memory romanStr){
         require(_num > 0 && _num < 4000, "Number must be between 1 and 3999");
         // for (uint i = 0; i < valueSymbols.length; i++) {
         //     uint256 keyValue = valueSymbols[i].value;
