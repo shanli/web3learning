@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "target",
+								"type": "address"
+							},
+							{
+								"internalType": "bool",
+								"name": "allowFailure",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes",
+								"name": "callData",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct Multicall.Call[]",
+						"name": "calls",
+						"type": "tuple[]"
+					}
+				],
+				"name": "multicall",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "success",
+								"type": "bool"
+							},
+							{
+								"internalType": "bytes",
+								"name": "returnData",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct Multicall.Result[]",
+						"name": "returnData",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"multicall((address,bool,bytes)[])": {
+					"params": {
+						"calls": "Call结构体组成的数组"
+					},
+					"returns": {
+						"returnData": "Result结构体组成的数组"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"multicall((address,bool,bytes)[])": {
+					"notice": "将多个调用（支持不同合约/不同方法/不同参数）合并到一次调用"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"103/MultiCall.sol": "Multicall"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"103/MultiCall.sol": {
+			"keccak256": "0x28bffea9a52ad769574a736a451ed4133262c7992f6c0b70d2bf77cb873aabc4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0c587e7cba15aa1786622a7c8a861d0ca3411015c66bbf58f01639a6b455707f",
+				"dweb:/ipfs/QmPropBxRuALdstuyQg9ZCBJsSTU2R4ftj64jDBKPJcP1N"
+			]
+		}
+	},
+	"version": 1
+}

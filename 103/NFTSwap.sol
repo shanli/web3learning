@@ -10,7 +10,7 @@ contract NFTSwap is IERC721Receiver {
         address owner;
         uint256 price;
     }
-    mapping(address => mapping(uint256 => Order)) private nftList;
+    mapping(address => mapping(uint256 => Order)) private  nftList;
 
     // Add these inside the contract, before the `onERC721Received` function
     event List(address indexed seller, address indexed nftAddr, uint256 indexed tokenId, uint256 price);

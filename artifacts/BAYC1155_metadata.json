@@ -466,18 +466,18 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"103/BAYC1155.sol": {
-			"keccak256": "0xeaa97bffbd96a4944504ae288322b7000f4d6c84288706dea974e5673d8c3627",
+			"keccak256": "0x2fbf2ffafbf1be72e4a46d1351234bc3a02e6b6ef382b6240e54dd9ec941cbc2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a8196254ac079d8da8d8ea721ffc81559e52ca2b0a936fc644a03f88bbe92c5e",
-				"dweb:/ipfs/QmQBw54XWBdVCsR5n68g5y95Qw8RE22ZjG4FgjLX7LN5vQ"
+				"bzz-raw://f0078f6b752d0ff75b95bd34e8f48566c6efd491e4d6df878433e13102a20538",
+				"dweb:/ipfs/QmSjhRRAtKCS4dpiZqURrbbJwg3F2HV82mbCnhU4mCBQ4H"
 			]
 		},
 		"103/ERC1155.sol": {

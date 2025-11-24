@@ -292,11 +292,11 @@
 			]
 		},
 		"103/NFTSwap.sol": {
-			"keccak256": "0xa28b1737e3a66e08ef94d23a1fd798031a4c4fbdaed4ad804415ae0839112a7c",
+			"keccak256": "0x598e3c0d03d0fe797fc7500c19033664777cd0605583d9779cbcf59b0f99b9f1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dc1832222bc0d71040fb320492757bec29f1a4f43b57bc137ac43ba2e8f3b47b",
-				"dweb:/ipfs/QmVz6s8ghMp8u6NgzesAyEcjKBRUSgYxn81ZF5VWwZVzry"
+				"bzz-raw://3bcdea29464647ca9383d83c057dc1a383953202b32355b84bafdb9791e02602",
+				"dweb:/ipfs/QmSZr7Z7tNbxkoUx3mLRu6LW8Aiwd5Sbpm8PiMDrNCKAhW"
 			]
 		}
 	},

@@ -1,0 +1,144 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "ECDSAInvalidSignature",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "length",
+						"type": "uint256"
+					}
+				],
+				"name": "ECDSAInvalidSignatureLength",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "ECDSAInvalidSignatureS",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "permitStore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"errors": {
+				"ECDSAInvalidSignature()": [
+					{
+						"details": "The signature derives the `address(0)`."
+					}
+				],
+				"ECDSAInvalidSignatureLength(uint256)": [
+					{
+						"details": "The signature has an invalid length."
+					}
+				],
+				"ECDSAInvalidSignatureS(bytes32)": [
+					{
+						"details": "The signature has an S value that is in the upper half order."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {
+				"permitStore(uint256,bytes)": {
+					"details": "Store value in variable"
+				},
+				"retrieve()": {
+					"details": "Return value ",
+					"returns": {
+						"_0": "value of 'number'"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"103/EIP712.sol": "EIP712Storage"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"103/EIP712.sol": {
+			"keccak256": "0xdcd4d319b561fe863f1aa514827f034997159cf0e822af151169cfaabf3d3046",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://595c230e089246d349d672c2e123859823649972cc14a9a9841f8e65c9d9fdd3",
+				"dweb:/ipfs/QmZzriRAYUQAgntD187a7A33q9b683SgRprsKaeXnxJ7nV"
+			]
+		},
+		"@openzeppelin/contracts/utils/cryptography/ECDSA.sol": {
+			"keccak256": "0x69f54c02b7d81d505910ec198c11ed4c6a728418a868b906b4a0cf29946fda84",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e25e4bdb7ae1f21d23bfee996e22736fc0ab44cfabedac82a757b1edc5623b9",
+				"dweb:/ipfs/QmQdWQvB6JCP9ZMbzi8EvQ1PTETqkcTWrbcVurS7DKpa5n"
+			]
+		}
+	},
+	"version": 1
+}
